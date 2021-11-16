@@ -82,7 +82,9 @@ section {
   top: -35px;
 }
 nav {
-  background-color: #a285b1f8;
+  background-color: #250735ea;
+  /* background-color: #a285b1f8; */
+
   height: 75px;
   width: 100%;
   overflow: auto;
@@ -91,7 +93,7 @@ nav {
 
 .nav-bar ul {
   list-style: none;
-  padding: 1% 0 0 650px;
+  padding: 1% 0 0 750px;
   width: 100%;
   height: auto;
 }
@@ -104,7 +106,7 @@ nav {
   padding: 10px;
   display: block;
   text-decoration: none;
-  color: rgb(139, 87, 87);
+  color: #ddd4e7;
   text-decoration: none;
   font-weight: 500;
   letter-spacing: 1px;
