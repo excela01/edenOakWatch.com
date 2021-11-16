@@ -91,9 +91,9 @@ nav {
 
 .nav-bar ul {
   list-style: none;
-  padding: 1% 0 0 500px;
+  padding: 1% 0 0 600px;
   width: 100%;
-  height: 75px;
+  height: auto;
 }
 .nav-bar ul li {
   float: left;
