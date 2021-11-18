@@ -122,6 +122,13 @@ nav {
   text-align: center;
 }
 
+.call.call.call {
+  color: #9438d1ab;
+}
+
+.call.call.call:hover {
+  color: rgb(255, 255, 255);
+}
 .buttons .button1 {
   color: rgb(255, 255, 255);
   text-decoration: none;
@@ -154,7 +161,8 @@ nav {
 }
 
 .button1.order:hover {
-  background-color: #309148;
+  background-color: #ddd;
+  color: #21022cd8;
   padding: 0.9%;
   margin-bottom: 1%;
 }
@@ -196,6 +204,7 @@ nav {
 .media-icons {
   margin-top: 1%;
 }
+
 .slash {
   overflow: hidden;
   position: relative;
@@ -297,6 +306,33 @@ body .content {
 }
 
 /*--------------------------------------------*/
+/*------------MEDIA ICONS-----------------*/
+/*--------------------------------------------*/
+
+.media-icons a i,
+#media-icons a i {
+  display: inline-block;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.media-icons a i:hover,
+#media-icons a i:hover {
+  font-size: 110%;
+  color: #9438d1;
+}
+
+#media-icons {
+  float: right;
+  position: fixed;
+  bottom: 13%;
+  right: 5%;
+  font-size: 190%;
+}
+
+/*--------------------------------------------*/
 /*------------FOOTER SECTION-----------------*/
 /*--------------------------------------------*/
 
@@ -313,12 +349,6 @@ footer {
   width: 90%;
   margin: auto;
 } */
-#media-icons {
-  float: right;
-  position: fixed;
-  bottom: 13%;
-  right: 5%;
-}
 .footer-nav {
   float: left;
 }
