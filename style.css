@@ -3,9 +3,6 @@
 * {
   box-sizing: border-box;
   font-family: "poppins", sans-serif, serif;
-}
-
-* {
   margin: 0;
   padding: 0;
   color: #fafcfce0;
@@ -32,7 +29,7 @@
 /****************************************/
 .slider {
   overflow: hidden;
-  height: 379px;
+  height: 419px;
   border-radius: 9%;
 }
 
@@ -56,8 +53,7 @@
 /****************************************/
 section {
   position: relative;
-  width: 100%;
-  min-height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   background-image: linear-gradient(
@@ -72,47 +68,57 @@ section {
 /****************************************/
 /****************HEADER*****************/
 /* ************************************** */
-
+.logo {
+  width: 30%;
+}
 .logo img {
-  position: absolute;
-  height: 200px;
-  width: auto;
-  top: -35px;
+  height: auto;
+  width: 100px;
+  margin: auto 0;
 }
 nav {
   background-color: #250735ea;
-  /* background-color: #a285b1f8; */
-
-  height: 75px;
+  position: sticky;
+  display: flex;
+  justify-content: space-around;
   width: 100%;
-  overflow: auto;
-  box-shadow: 2px 2px 2px #bfb7c98a;
+  z-index: 100;
+  height: auto;
+  box-shadow: 2px 2px 2px #ae64bd8a;
 }
 
 .nav-bar ul {
   list-style: none;
-  padding: 1% 0 0 750px;
+  /* padding: 1% 0 0 750px; */
   width: 100%;
-  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1.5rem;
 }
 .nav-bar ul li {
   float: left;
+  width: fit-content;
+  /* border: 1px solid green; */
+  margin-top: 3.9%;
 }
 
 .nav-bar li a {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+
   width: 100%;
+  height: 100%;
   padding: 10px;
+  /* margin-top: 14%; */
   display: block;
   text-decoration: none;
   color: #ddd4e7;
   text-decoration: none;
   font-weight: 500;
   letter-spacing: 1px;
-  border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+
   transition: 0.3s;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
@@ -120,6 +126,16 @@ nav {
   -o-transition: 0.3s;
   transition-property: background-color;
   text-align: center;
+}
+
+nav .nav-bar a:not(:last-child),
+.button1 {
+  padding: 0 15px;
+}
+
+nav .nav-bar a:hover,
+.button1:hover {
+  background-color: rgba(160, 127, 199, 0.95);
 }
 
 .call.call.call {
@@ -202,7 +218,8 @@ nav {
   margin-bottom: 1.5%;
 }
 .media-icons {
-  margin-top: 1%;
+  margin-top: 2.5%;
+  margin-left: 2.5%;
 }
 
 .slash {
@@ -228,22 +245,11 @@ nav {
   margin-left: 1.5%;
   position: relative;
 }
-
-nav .nav-bar a:not(:last-child),
-.button1 {
-  padding: 0 15px;
-}
-
-nav .nav-bar a:hover,
-.button1:hover {
-  background-color: rgba(160, 127, 199, 0.95);
-}
-
 /****************************************/
 /****************BODY*****************/
 /****************************************/
 body .content {
-  max-width: 70%;
+  max-width: 100%;
   margin: 60px 10%;
 }
 .content {
@@ -339,16 +345,11 @@ body .content {
 footer {
   background-color: #21022c;
   color: #eed6fa;
-  padding: 40px;
+  padding: 10px;
   font-size: 80%;
-  position: relative;
+  margin: auto;
 }
 
-/* .footer-nav,
-.social-links{
-  width: 90%;
-  margin: auto;
-} */
 .footer-nav {
   float: left;
 }
@@ -409,11 +410,35 @@ footer {
 }
 
 footer p {
-  text-align: center;
-  display: block;
-  margin-top: 20px;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  margin-left: 350px;
   color: #888;
+  position: relative;
 }
+/*****************************/
+/*************clear White Space****************/
+/*****************************/
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/****************************************/
+/*****************javascript*****************/
+/****************************************/
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 /* ......................... */
 @keyframes slider {
   0% {
