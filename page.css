@@ -56,25 +56,6 @@ footer {
 .social-links li a:visited {
   font-size: 160%;
 }
-
-.ion-social-facebook:hover {
-  color: #3b5998;
-}
-
-.ion-social-twitter:hover {
-  color: #00aced;
-}
-
-.ion-social-instagram:hover {
-  color: #517fa4;
-}
-
-.ion-social-facebook,
-.ion-social-twitter,
-.ion-social-instagram {
-  transition: color 0.2s;
-}
-
 footer p {
   width: 100%;
   margin-top: 5px;
