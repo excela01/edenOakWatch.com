@@ -462,8 +462,9 @@ footer p {
     margin-left: 50px;
     width: 70%;
   }
-  footer fixed;
+  /* footer {
+    position: fixed;
     bottom: 0;
     left: 0;
-  }
+  } */
 }

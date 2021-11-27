@@ -145,9 +145,9 @@ nav .nav-bar a:hover,
 /******************************/
 /***********BUTTONS************/
 /*****************************/
-.buttons {
+/* .buttons {
   text-align: center;
-}
+} */
 
 .call.call.call {
   color: #d8d8d8;
@@ -364,7 +364,7 @@ body .content {
 #media-icons {
   float: right;
   position: fixed;
-  bottom: 13%;
+  bottom: 10%;
   right: 5%;
   font-size: 190%;
 }
