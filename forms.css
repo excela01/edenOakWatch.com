@@ -31,24 +31,6 @@ body {
   max-width: 1140px;
 }
 
-/****************************************/
-/****************FORM*****************/
-/* ************************************** */
-
-form {
-  display: block;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid gold;
-  max-width: 700px;
-  height: auto;
-  width: 100%;
-  background-color: rgba(204, 204, 204, 0.801);
-  text-align: center;
-  padding: 1% 1%;
-  margin: 10px auto;
-  /* overflow-y: scroll; */
-}
 /* 
 form table {
   /* border: 1px solid blue; */
@@ -73,10 +55,6 @@ form table {
 /****************************************/
 /****************INFO*****************/
 /* ************************************** */
-
-form {
-  border: 1px solid orange;
-}
 .info {
   /* border: 1px solid pink; */
   /* border-top: 5px solid #8c0fb9ce; */
@@ -85,12 +63,7 @@ form {
   border-image: linear-gradient(135deg, #3f0b3fd7, #8c0fb9ce) 1;
   padding: 20px 0;
 }
-.info1 {
-  border: 1px solid aqua;
-}
-.info2 {
-  border: 1px solid brown;
-}
+
 .info1 ul li {
   list-style: none;
 }
@@ -105,14 +78,48 @@ form {
   line-height: 30px;
   margin: 10px auto;
   width: 50%;
-  background: linear-gradient(135deg, #3f0b3fd7, #8c0fb9ce) 1;
+  color: #b3b2b2fb;
+  background: linear-gradient(135deg, #3a0f3ad7, #30083fef);
+  padding: 2%;
+  /* background-image: linear-gradient(135deg, #3f0b3fd7, #8c0fb9ce) 1; */
 }
+
+/* .info1 {
+  border: 1px solid aqua;
+}
+.info2 {
+  border: 1px solid brown;
+} */
+
+/****************************************/
+/****************FORM*****************/
+/* ************************************** */
+
+form {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(255, 217, 0, 0.377);
+  max-width: 700px;
+  height: auto;
+  width: 100%;
+  background-color: rgba(204, 204, 204, 0.801);
+  text-align: center;
+  padding: 1% 1%;
+  color: #3f0b3fd7;
+  margin: 10px auto;
+  /* overflow-y: scroll; */
+}
+
 form table .user-details {
   text-align: start;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 3% 0 2% 0;
+}
+.order-info {
+  color: #3f0b3fd7;
 }
 form .user-details .input-box {
   margin-bottom: 15px;
@@ -189,7 +196,6 @@ form .gender-details .category label {
 
 form .gender-details .category .gender {
   width: 150px;
-  border: 1px solid gold;
   margin: 0 5px 0 5px;
   justify-content: space-evenly;
   /* display: block; */
@@ -245,6 +251,7 @@ body {
 /* ************************************** */
 .logo {
   width: 30%;
+  padding-left: -35px;
 }
 .logo img {
   height: auto;
@@ -316,16 +323,45 @@ nav .nav-bar a:hover,
   text-align: center;
   background: rgba(204, 204, 204, 0.61);
 }
+/****************************************/
+/****************FOOTER*****************/
+/* ************************************** */
+footer {
+  background-color: #21022c;
+  color: #eed6fa;
+  padding: 10px;
+  font-size: 80%;
+  margin: auto;
+}
+.footer-nav {
+  border: 1px solid white;
+  float: left;
+}
+.footer-nav li {
+  border: 1px solid green;
+  margin-left: 10px;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.coll {
+  border: 1px solid pink;
+}
+.copy {
+  border: 1px solid gold;
+  /* width: 90%; */
+  /* margin: 0 auto 2% auto; */
+  text-align: center;
+  display: block;
+}
+
 footer p {
   width: 100%;
   margin-top: 5px;
-  margin-bottom: 15px;
   margin-left: 350px;
   color: #888;
-  position: relative;
 }
 
-@media only screen and (max-width: 584px) {
+@media only all and (max-width: 584px) {
   table {
     max-width: 700px;
   }

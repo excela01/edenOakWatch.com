@@ -3,6 +3,94 @@
   margin: 0;
   padding: 0;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background: #ccc;
+}
+/****************************************/
+/****************HEADER*****************/
+/* ************************************** */
+.logo {
+  width: 30%;
+  padding-left: -35px;
+}
+.logo img {
+  height: auto;
+  width: 100px;
+  margin: auto 0;
+}
+nav {
+  background-color: #250735ea;
+  position: sticky;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  z-index: 100;
+  height: auto;
+  box-shadow: 2px 2px 2px #ae64bd56;
+}
+
+.nav-bar ul {
+  list-style: none;
+  /* padding: 1% 0 0 750px; */
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1.5rem;
+}
+.nav-bar ul li {
+  float: left;
+  width: fit-content;
+  /* border: 1px solid green; */
+  margin-top: 3.9%;
+}
+
+.nav-bar li a {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  /* margin-top: 14%; */
+  display: block;
+  text-decoration: none;
+  color: #ddd4e7;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition-property: background-color;
+  text-align: center;
+}
+
+nav .nav-bar a:not(:last-child),
+.button1 {
+  padding: 0 15px;
+}
+
+nav .nav-bar a:hover,
+.button1:hover {
+  background-color: rgba(160, 127, 199, 0.95);
+}
+.mini-nav {
+  text-align: center;
+  background: rgba(204, 204, 204, 0.61);
+  box-shadow: 2px 2px 2px #ae64bd56;
+}
 
 /*--------------------------------------------*/
 /*------------FOOTER SECTION-----------------*/
@@ -14,6 +102,10 @@ footer {
   padding: 10px;
   font-size: 80%;
   margin: auto;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 .footer-nav {
@@ -56,6 +148,25 @@ footer {
 .social-links li a:visited {
   font-size: 160%;
 }
+
+.ion-social-facebook:hover {
+  color: #3b5998;
+}
+
+.ion-social-twitter:hover {
+  color: #00aced;
+}
+
+.ion-social-instagram:hover {
+  color: #517fa4;
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-instagram {
+  transition: color 0.2s;
+}
+
 footer p {
   width: 100%;
   margin-top: 5px;
@@ -63,4 +174,11 @@ footer p {
   margin-left: 350px;
   color: #888;
   position: relative;
+  display: block;
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    background-color: gold;
+  }
 }

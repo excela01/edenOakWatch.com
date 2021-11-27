@@ -70,11 +70,11 @@ section {
 /* ************************************** */
 .logo {
   width: 30%;
+  padding-left: -35px;
 }
 .logo img {
   height: auto;
   width: 100px;
-  margin: auto 0;
 }
 nav {
   background-color: #250735ea;
@@ -139,14 +139,16 @@ nav .nav-bar a:hover,
 }
 
 .call.call.call {
-  color: #9438d1ab;
+  color: #d8d8d8;
 }
 
 .call.call.call:hover {
-  color: rgb(255, 255, 255);
+  color: rgb(17, 17, 17);
 }
 .buttons .button1 {
   color: rgb(255, 255, 255);
+  background: linear-gradient(-135deg, #888, #6f3091);
+
   text-decoration: none;
   font-weight: 500;
   letter-spacing: 1px;
@@ -167,8 +169,9 @@ nav .nav-bar a:hover,
   background-color: #bfb7c9;
 }
 .button1:hover {
-  background-color: rgba(160, 127, 199, 0.95);
-  padding: 1%;
+  background: linear-gradient(135deg, #888, #6f3091);
+  padding: 12px 5px;
+
   box-shadow: inset 2px 2px 2px #bfb7c9, inset -2px -2px 2px #8e3091;
   width: 200%;
 }
@@ -179,29 +182,38 @@ nav .nav-bar a:hover,
 .button1.order:hover {
   background-color: #ddd;
   color: #21022cd8;
-  padding: 0.9%;
   margin-bottom: 1%;
+  padding: 12px 5px;
 }
 .specifications div {
-  position: relative;
-  display: block;
-  padding-left: 2%;
+  /* position: relative; */
+  /* display: block; */
+  /* padding-left: 2%; */
   padding-top: 10px;
+  width: 410px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 45px;
+  border: 1px solid gold;
 }
-.specifications ul .order1 {
-  margin-top: 100px;
+.spec {
+  color: #6f3091;
+  font-size: 200%;
+}
+.specifications ul .button8 {
+  background: linear-gradient(-135deg, #888, #6f3091);
+  width: auto;
+  height: 100%;
   text-decoration: none;
   list-style: none;
   border-radius: 12px;
-  padding: 1.5%;
+  margin-top: -10px;
+  padding: 2.3% 38%;
+  margin: 100px auto 0 auto;
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
   -ms-border-radius: 12px;
   -o-border-radius: 12px;
-  /*margin-bottom: 12px;
-  */
-  position: relative;
-
   transition: 0.3;
   -webkit-transition: 0.3;
   -moz-transition: 0.3;
@@ -209,10 +221,10 @@ nav .nav-bar a:hover,
   -o-transition: 0.3;
 }
 
-.specifications ul .order1:hover {
-  background-color: #6f3091;
-  height: 110%;
-  width: 110%;
+.specifications ul .button8:hover {
+  background: linear-gradient(135deg, #888, #6f3091);
+  padding: 2.5% 40%;
+  margin: 100px auto 0 auto;
 }
 .specifications ul li {
   margin-bottom: 1.5%;
@@ -225,10 +237,13 @@ nav .nav-bar a:hover,
 .slash {
   overflow: hidden;
   position: relative;
+  /* border: 1px solid rgba(255, 217, 0, 0.068); */
 }
 
 .slash .price {
-  width: inherit;
+  margin-right: 25%;
+  height: 250px;
+  width: 250px;
   border-radius: 15px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
@@ -379,6 +394,10 @@ footer {
   border: none;
   color: #888;
   transition: color 0.2s;
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -ms-transition: color 0.2s;
+  -o-transition: color 0.2s;
 }
 
 .footer-nav li a:active,
@@ -407,8 +426,14 @@ footer {
 .ion-social-twitter,
 .ion-social-instagram {
   transition: color 0.2s;
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -ms-transition: color 0.2s;
+  -o-transition: color 0.2s;
 }
-
+footer {
+  height: 80%;
+}
 footer p {
   width: 100%;
   margin-top: 5px;

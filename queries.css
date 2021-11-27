@@ -17,5 +17,30 @@
 @media only screen and(max-width: 767px) {
 }
 
-@media only screen and(max-width: 480px) {
+@media only screen and (max-width: 766px) {
+  .span_2_of_2 {
+    width: 100%;
+  }
+  .span_1_of_2.span_1_of_2 {
+    width: 100%;
+    margin-bottom: 10%;
+  }
+
+  footer p {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    color: #888;
+    position: relative;
+  }
+  .para.h1 {
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 2px #9438d1, -2px -2px 2px rgb(46 17 82 / 95%);
+    text-align: center;
+    margin-bottom: 5px;
+  }
 }
