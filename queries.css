@@ -41,6 +41,36 @@
     letter-spacing: 2px;
     text-shadow: 2px 2px 2px #9438d1, -2px -2px 2px rgb(46 17 82 / 95%);
     text-align: center;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+  }
+  .money {
+    margin-bottom: 19px;
+    text-decoration: underline;
+    text-align: center;
+  }
+
+  /* .nav-bar li a {
+  } */
+  .para-special {
+    position: relative;
+  }
+  .para-special::after {
+    position: absolute;
+    display: block;
+    content: "";
+    margin-top: 5px;
+    margin-left: 35%;
+    width: 30%;
+    height: 5px;
+    border-radius: 19px;
+    background: #9438d1;
+    -webkit-border-radius: 19px;
+    -moz-border-radius: 19px;
+    -ms-border-radius: 19px;
+    -o-border-radius: 19px;
+  }
+  .rows,
+  .para {
+    text-align: center;
   }
 }

@@ -24,7 +24,7 @@ body {
 .body {
   /* height: 100%; */
   display: block;
-  border: 11px solid green;
+  /* border: 11px solid green; */
 }
 .row {
   margin: auto;
@@ -193,9 +193,13 @@ form .gender-details .category label {
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
 }
-
+.gender-details {
+  width: 100%;
+  /* border: 1px solid gold; */
+  display: inline-block;
+}
 form .gender-details .category .gender {
-  width: 150px;
+  width: 200px;
   margin: 0 5px 0 5px;
   justify-content: space-evenly;
   /* display: block; */
@@ -326,42 +330,94 @@ nav .nav-bar a:hover,
 /****************************************/
 /****************FOOTER*****************/
 /* ************************************** */
+
 footer {
   background-color: #21022c;
   color: #eed6fa;
-  padding: 10px;
+  padding: 1px;
   font-size: 80%;
   margin: auto;
+  border: 10px solid rgba(37, 15, 44, 0.63);
+  height: 100px;
 }
+
 .footer-nav {
-  border: 1px solid white;
   float: left;
 }
-.footer-nav li {
-  border: 1px solid green;
-  margin-left: 10px;
+
+.social-links {
+  float: right;
+}
+
+.social-links li:last-child,
+.footer-nav li:last-child {
+  margin: 0;
+}
+
+.footer-nav li,
+.social-links li {
   display: inline-block;
-  margin-bottom: 15px;
+  margin-right: 20px;
+  list-style: none;
+  /* text-align: center; */
 }
-.coll {
-  border: 1px solid pink;
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+  text-decoration: none;
+  border: none;
+  color: #888;
+  transition: color 0.2s;
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -ms-transition: color 0.2s;
+  -o-transition: color 0.2s;
 }
-.copy {
-  border: 1px solid gold;
-  /* width: 90%; */
-  /* margin: 0 auto 2% auto; */
-  text-align: center;
-  display: block;
+
+.footer-nav li a:active,
+.footer-nav li a:hover {
+  color: #ddd;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+  font-size: 160%;
+}
+
+.ion-social-facebook:hover {
+  color: #3b5998;
+}
+
+.ion-social-twitter:hover {
+  color: #00aced;
+}
+
+.ion-social-instagram:hover {
+  color: #517fa4;
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-instagram {
+  transition: color 0.2s;
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -ms-transition: color 0.2s;
+  -o-transition: color 0.2s;
 }
 
 footer p {
   width: 100%;
   margin-top: 5px;
+  margin-bottom: 15px;
   margin-left: 350px;
   color: #888;
+  position: relative;
 }
 
-@media only all and (max-width: 584px) {
+@media only all and (max-width: 766px) {
   table {
     max-width: 700px;
   }
@@ -371,7 +427,43 @@ footer p {
     margin-right: 10%;
     padding: 0 2%;
   }
-  form table .user-details .category {
+  /* form table .user-details .category {
     display: inline-block;
+  } */
+  .info1,
+  .info2 {
+    width: 70%;
+  }
+  form table .user-details {
+    width: 75%;
+  }
+  .btn {
+    width: 100%;
+    margin: auto;
+  }
+  form .gender-details .category label {
+    /* display: inline-block; */
+    width: 150px;
+    /* border: 1px solid green; */
+  }
+
+  .gender-details .category .dot {
+    margin-left: 0;
+  }
+
+  .copy {
+    /* border: 1px solid gold; */
+    /* width: 90%; */
+    /* margin: 0 auto 2% auto; */
+    text-align: start;
+    display: block;
+  }
+  footer p {
+    margin-left: 50px;
+    width: 70%;
+  }
+  footer fixed;
+    bottom: 0;
+    left: 0;
   }
 }
