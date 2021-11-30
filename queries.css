@@ -24,6 +24,13 @@
   nav {
     position: relative;
   }
+  .mini-nav {
+    font-size: 80%;
+  }
+  .fab,
+  .media-icons {
+    font-size: 150%;
+  }
   .col:first-child {
     margin-top: 4%;
   }
