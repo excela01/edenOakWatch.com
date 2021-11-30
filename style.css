@@ -108,9 +108,10 @@ nav {
 }
 
 .nav-bar li a {
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
   width: 100%;
+  border: 1px solid #646464c4;
   height: 100%;
   padding: 10px;
   /* margin-top: 14%; */
@@ -130,6 +131,7 @@ nav {
   -o-transition: 0.3s;
   transition-property: background-color;
   text-align: center;
+  white-space: nowrap;
 }
 
 nav .nav-bar a:not(:last-child),
@@ -141,13 +143,32 @@ nav .nav-bar a:hover,
 .button1:hover {
   background-color: rgba(160, 127, 199, 0.95);
 }
-
+.mini-nav {
+  text-align: center;
+  color: #ccc;
+  background: rgba(204, 204, 204, 0.61);
+}
+.mini-nav p {
+  color: #21022c;
+  padding: 1px;
+}
+/* #check {
+  display: none;
+  margin-right: 40px;
+}
+.checkbtn {
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  line-height: 70px;
+  margin-right: 0;
+} */
 /******************************/
 /***********BUTTONS************/
 /*****************************/
-/* .buttons {
-  text-align: center;
-} */
+.buttons {
+  margin-bottom: 15px;
+}
 
 .call.call.call {
   color: #d8d8d8;
@@ -207,7 +228,7 @@ nav .nav-bar a:hover,
   width: 410px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 15px;
+  margin-top: 10px;
   height: 45px;
 }
 
@@ -224,7 +245,7 @@ nav .nav-bar a:hover,
   list-style: none;
   border-radius: 12px;
   margin-top: -10px;
-  padding: 2.3% 38%;
+  padding: 2.3% 30%;
   margin: 100px auto 0 auto;
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
@@ -239,7 +260,7 @@ nav .nav-bar a:hover,
 
 .specifications ul .button8:hover {
   background: linear-gradient(135deg, #888, #6f3091);
-  padding: 2.5% 40%;
+  padding: 2.3% 30%;
   margin: 100px auto 0 auto;
 }
 .specifications ul li {
@@ -341,7 +362,9 @@ body .content {
 .head {
   text-align: end;
 }
-
+.benefits {
+  margin-top: 25px;
+}
 /*--------------------------------------------*/
 /*------------MEDIA ICONS-----------------*/
 /*--------------------------------------------*/
@@ -364,7 +387,7 @@ body .content {
 #media-icons {
   float: right;
   position: fixed;
-  bottom: 10%;
+  bottom: 9%;
   right: 5%;
   font-size: 190%;
 }

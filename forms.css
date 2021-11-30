@@ -100,7 +100,7 @@ form {
   justify-content: center;
   align-items: center;
   border: 1px solid rgba(255, 217, 0, 0.377);
-  max-width: 700px;
+  max-width: 800px;
   height: auto;
   width: 100%;
   background-color: rgba(204, 204, 204, 0.801);
@@ -462,9 +462,9 @@ footer p {
     margin-left: 50px;
     width: 70%;
   }
-  /* footer {
+  footer {
     position: fixed;
     bottom: 0;
     left: 0;
-  } */
+  }
 }
