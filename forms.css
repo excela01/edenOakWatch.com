@@ -447,7 +447,8 @@ footer p {
     width: 70%;
   }
   form table .user-details {
-    width: 75%;
+    width: 60%;
+    margin-right: 20%;
   }
   .btn {
     width: 110%;
