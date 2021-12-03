@@ -447,15 +447,18 @@ footer p {
     width: 70%;
   }
   form table .user-details {
-    width: 70%;
+    width: 50%;
   }
   .btn {
     width: 100%;
     margin: auto;
   }
+  form .gender-details .category .gender {
+    width: 95px;
+  }
   form .gender-details .category label {
     /* display: inline-block; */
-    width: 150px;
+    width: 50%;
     /* border: 1px solid green; */
   }
 
