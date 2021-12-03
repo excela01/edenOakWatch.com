@@ -468,6 +468,9 @@ footer p {
   .gender-details .category .dot {
     margin-left: 0;
   }
+  .order {
+    margin-left: 6%;
+  }
 
   .copy {
     /* border: 1px solid gold; */
