@@ -43,6 +43,7 @@
   }
   body {
     margin-bottom: 120px;
+    height: 100vh;
   }
   footer p {
     width: 100%;
