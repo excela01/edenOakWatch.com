@@ -100,14 +100,14 @@ form {
   justify-content: center;
   align-items: center;
   border: 1px solid rgba(255, 217, 0, 0.377);
-  max-width: 800px;
+  /* max-width: 800px; */
   height: auto;
   width: 100%;
   background-color: rgba(204, 204, 204, 0.801);
   text-align: center;
   padding: 1% 1%;
   color: #3f0b3fd7;
-  margin: 10px auto;
+  margin: auto;
   /* overflow-y: scroll; */
 }
 
@@ -423,6 +423,9 @@ footer p {
 @media only all and (max-width: 766px) {
   table {
     max-width: 700px;
+  }
+  form {
+    margin: 0 auto 100px auto;
   }
   form .user-details .input-box {
     margin-bottom: 15px;
