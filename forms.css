@@ -451,15 +451,15 @@ footer p {
     margin-right: 20%;
   }
   .btn {
-    width: 110%;
+    width: 90%;
     margin: auto;
   }
   form .gender-details .category .gender {
-    width: 95px;
+    width: 100%;
   }
   form .gender-details .category label {
     /* display: inline-block; */
-    width: 47%;
+    width: 45%;
     font-size: 80%;
     font-weight: bolder;
     /* border: 1px solid green; */
